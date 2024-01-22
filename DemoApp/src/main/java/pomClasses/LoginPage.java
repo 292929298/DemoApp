@@ -18,6 +18,13 @@ public class LoginPage {
 	public WebElement getUserPassword() {
 		return userPassword;
 	}
+	
+	@FindBy(xpath="//div[@text()='Registered successfully']")
+	private WebElement registerSuccessfulmsg;
+
+	public WebElement getRegisterSuccessfulmsg() {
+		return registerSuccessfulmsg;
+	}
 
 	@FindBy(id = "email")
 	private WebElement emailid;
@@ -45,6 +52,13 @@ public class LoginPage {
 		loginButton.click();
 	}
 
+	public boolean verifyResisterSuccessfulmsg()
+	{
+	    return  registerSuccessfulmsg.isDisplayed();
+	}
+	
+	
+	
 	public boolean verifySignInSuccesFullMsg() {
 		return signinSuccessfulmsg.isDisplayed();
 	}

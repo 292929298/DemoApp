@@ -24,9 +24,9 @@ public class RegisterPage {
 	private WebElement registerButton;
 	
  
-	@FindBy(xpath="//div[text()='RegisteredSuccessfully']")
-	    private WebElement  registerSuccessfulmsg;
-	
+//	@FindBy(xpath="//div[text()='RegisteredSuccessfully']")
+//	    private WebElement  registerSuccessfulmsg;
+//	
 	
 	
 	public WebElement getUsername() {
@@ -46,9 +46,9 @@ public class RegisterPage {
 		return registerButton;
 	}
 	
-	public WebElement getRegisterSuccessfulmsg() {
-		return registerSuccessfulmsg;
-	}
+//	public WebElement getRegisterSuccessfulmsg() {
+//		return registerSuccessfulmsg;
+//	}
 	
 	public void SetValueForRegisterUser(String name,String email,String password )
 	{
@@ -58,11 +58,11 @@ public class RegisterPage {
 		registerButton.click();
 	}
 	
-	public boolean verifyResisterSuccessfulmsg()
-	{
-	    return  registerSuccessfulmsg.isDisplayed();
-	}
-	
+//	public boolean verifyResisterSuccessfulmsg()
+//	{
+//	    return  registerSuccessfulmsg.isDisplayed();
+//	}
+//	
 
 
 
